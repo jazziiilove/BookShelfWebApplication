@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BookShelfWebModel1" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="BookShelfWebEntities1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Books" EntityType="BookShelfWebModel1.Book" />
+    <EntitySet Name="Users" EntityType="BookShelfWebModel1.User" />
+    <AssociationSet Name="FK_Book_User" Association="BookShelfWebModel1.FK_Book_User">
+      <End Role="User" EntitySet="Users" />
+      <End Role="Book" EntitySet="Books" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Book">
+    <Key>
+      <PropertyRef Name="bookID" />
+    </Key>
+    <Property Name="bookID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="isbn" Type="String" MaxLength="10" Unicode="true" FixedLength="true" />
+    <Property Name="bookName" Type="String" MaxLength="10" Unicode="true" FixedLength="true" />
+    <Property Name="authorName" Type="String" MaxLength="10" Unicode="true" FixedLength="true" />
+    <Property Name="userID" Type="Int32" />
+    <Property Name="bookStatus" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="User" Relationship="BookShelfWebModel1.FK_Book_User" FromRole="Book" ToRole="User" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="userID" />
+    </Key>
+    <Property Name="userID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="fullName" Type="String" MaxLength="10" Unicode="true" FixedLength="true" />
+    <Property Name="password" Type="String" MaxLength="10" Unicode="true" FixedLength="true" />
+    <Property Name="email" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="address" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="city" Type="String" MaxLength="10" Unicode="true" FixedLength="true" />
+    <NavigationProperty Name="Books" Relationship="BookShelfWebModel1.FK_Book_User" FromRole="User" ToRole="Book" />
+  </EntityType>
+  <Association Name="FK_Book_User">
+    <End Role="User" Type="BookShelfWebModel1.User" Multiplicity="0..1" />
+    <End Role="Book" Type="BookShelfWebModel1.Book" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="userID" />
+      </Principal>
+      <Dependent Role="Book">
+        <PropertyRef Name="userID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

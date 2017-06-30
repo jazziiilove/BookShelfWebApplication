@@ -1,0 +1,9 @@
+C:\Users\Baran.Topal\Documents\C#Projects\Other\Other\BookShelfWebApplication\BookShelf.IBLL\bin\Debug\BookShelf.IBLL.dll
+C:\Users\Baran.Topal\Documents\C#Projects\Other\Other\BookShelfWebApplication\BookShelf.IBLL\bin\Debug\BookShelf.IBLL.pdb
+C:\Users\Baran.Topal\Documents\C#Projects\Other\Other\BookShelfWebApplication\BookShelf.IBLL\bin\Debug\BookShelfWebBookShelfModel.dll
+C:\Users\Baran.Topal\Documents\C#Projects\Other\Other\BookShelfWebApplication\BookShelf.IBLL\bin\Debug\BookShelfWeb.Definitions.dll
+C:\Users\Baran.Topal\Documents\C#Projects\Other\Other\BookShelfWebApplication\BookShelf.IBLL\bin\Debug\BookShelfWebBookShelfModel.pdb
+C:\Users\Baran.Topal\Documents\C#Projects\Other\Other\BookShelfWebApplication\BookShelf.IBLL\bin\Debug\BookShelfWeb.Definitions.pdb
+C:\Users\Baran.Topal\Documents\C#Projects\Other\Other\BookShelfWebApplication\BookShelf.IBLL\obj\Debug\BookShelfWeb.IBLL.csprojResolveAssemblyReference.cache
+C:\Users\Baran.Topal\Documents\C#Projects\Other\Other\BookShelfWebApplication\BookShelf.IBLL\obj\Debug\BookShelf.IBLL.dll
+C:\Users\Baran.Topal\Documents\C#Projects\Other\Other\BookShelfWebApplication\BookShelf.IBLL\obj\Debug\BookShelf.IBLL.pdb

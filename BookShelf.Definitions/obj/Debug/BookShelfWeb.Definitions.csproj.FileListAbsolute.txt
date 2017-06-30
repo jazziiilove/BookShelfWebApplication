@@ -1,0 +1,5 @@
+C:\Users\Baran.Topal\Documents\C#Projects\Other\Other\BookShelfWebApplication\BookShelf.Definitions\bin\Debug\BookShelfWeb.Definitions.dll.config
+C:\Users\Baran.Topal\Documents\C#Projects\Other\Other\BookShelfWebApplication\BookShelf.Definitions\bin\Debug\BookShelfWeb.Definitions.dll
+C:\Users\Baran.Topal\Documents\C#Projects\Other\Other\BookShelfWebApplication\BookShelf.Definitions\bin\Debug\BookShelfWeb.Definitions.pdb
+C:\Users\Baran.Topal\Documents\C#Projects\Other\Other\BookShelfWebApplication\BookShelf.Definitions\obj\Debug\BookShelfWeb.Definitions.dll
+C:\Users\Baran.Topal\Documents\C#Projects\Other\Other\BookShelfWebApplication\BookShelf.Definitions\obj\Debug\BookShelfWeb.Definitions.pdb

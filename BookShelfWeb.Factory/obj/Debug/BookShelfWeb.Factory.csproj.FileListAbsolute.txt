@@ -1,0 +1,13 @@
+C:\Users\Baran.Topal\Documents\C#Projects\Other\Other\BookShelfWebApplication\BookShelfWeb.Factory\bin\Debug\BookShelfWeb.Factory.dll
+C:\Users\Baran.Topal\Documents\C#Projects\Other\Other\BookShelfWebApplication\BookShelfWeb.Factory\bin\Debug\BookShelfWeb.Factory.pdb
+C:\Users\Baran.Topal\Documents\C#Projects\Other\Other\BookShelfWebApplication\BookShelfWeb.Factory\bin\Debug\BookShelfWeb.CacheManager.dll
+C:\Users\Baran.Topal\Documents\C#Projects\Other\Other\BookShelfWebApplication\BookShelfWeb.Factory\bin\Debug\BookShelfWeb.IDAL.dll
+C:\Users\Baran.Topal\Documents\C#Projects\Other\Other\BookShelfWebApplication\BookShelfWeb.Factory\bin\Debug\BookShelfWebBookShelfModel.dll
+C:\Users\Baran.Topal\Documents\C#Projects\Other\Other\BookShelfWebApplication\BookShelfWeb.Factory\bin\Debug\BookShelfWeb.Definitions.dll
+C:\Users\Baran.Topal\Documents\C#Projects\Other\Other\BookShelfWebApplication\BookShelfWeb.Factory\bin\Debug\BookShelfWeb.CacheManager.pdb
+C:\Users\Baran.Topal\Documents\C#Projects\Other\Other\BookShelfWebApplication\BookShelfWeb.Factory\bin\Debug\BookShelfWeb.IDAL.pdb
+C:\Users\Baran.Topal\Documents\C#Projects\Other\Other\BookShelfWebApplication\BookShelfWeb.Factory\bin\Debug\BookShelfWebBookShelfModel.pdb
+C:\Users\Baran.Topal\Documents\C#Projects\Other\Other\BookShelfWebApplication\BookShelfWeb.Factory\bin\Debug\BookShelfWeb.Definitions.pdb
+C:\Users\Baran.Topal\Documents\C#Projects\Other\Other\BookShelfWebApplication\BookShelfWeb.Factory\obj\Debug\BookShelfWeb.Factory.csprojResolveAssemblyReference.cache
+C:\Users\Baran.Topal\Documents\C#Projects\Other\Other\BookShelfWebApplication\BookShelfWeb.Factory\obj\Debug\BookShelfWeb.Factory.dll
+C:\Users\Baran.Topal\Documents\C#Projects\Other\Other\BookShelfWebApplication\BookShelfWeb.Factory\obj\Debug\BookShelfWeb.Factory.pdb

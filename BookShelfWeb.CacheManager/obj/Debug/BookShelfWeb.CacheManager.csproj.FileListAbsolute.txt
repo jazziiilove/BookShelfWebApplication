@@ -1,0 +1,4 @@
+C:\Users\Baran.Topal\Documents\C#Projects\Other\Other\BookShelfWebApplication\BookShelfWeb.CacheManager\bin\Debug\BookShelfWeb.CacheManager.dll
+C:\Users\Baran.Topal\Documents\C#Projects\Other\Other\BookShelfWebApplication\BookShelfWeb.CacheManager\bin\Debug\BookShelfWeb.CacheManager.pdb
+C:\Users\Baran.Topal\Documents\C#Projects\Other\Other\BookShelfWebApplication\BookShelfWeb.CacheManager\obj\Debug\BookShelfWeb.CacheManager.dll
+C:\Users\Baran.Topal\Documents\C#Projects\Other\Other\BookShelfWebApplication\BookShelfWeb.CacheManager\obj\Debug\BookShelfWeb.CacheManager.pdb

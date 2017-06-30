@@ -1,0 +1,15 @@
+C:\Users\Baran.Topal\Documents\C#Projects\Other\Other\BookShelfWebApplication\BookShelfWeb.DAL\bin\Debug\BookShelfWeb.DAL.dll
+C:\Users\Baran.Topal\Documents\C#Projects\Other\Other\BookShelfWebApplication\BookShelfWeb.DAL\bin\Debug\BookShelfWeb.DAL.pdb
+C:\Users\Baran.Topal\Documents\C#Projects\Other\Other\BookShelfWebApplication\BookShelfWeb.DAL\bin\Debug\BookShelfWeb.DataAccessHelper.dll
+C:\Users\Baran.Topal\Documents\C#Projects\Other\Other\BookShelfWebApplication\BookShelfWeb.DAL\bin\Debug\BookShelfWeb.Definitions.dll
+C:\Users\Baran.Topal\Documents\C#Projects\Other\Other\BookShelfWebApplication\BookShelfWeb.DAL\bin\Debug\BookShelfWeb.IDAL.dll
+C:\Users\Baran.Topal\Documents\C#Projects\Other\Other\BookShelfWebApplication\BookShelfWeb.DAL\bin\Debug\BookShelfWebBookShelfModel.dll
+C:\Users\Baran.Topal\Documents\C#Projects\Other\Other\BookShelfWebApplication\BookShelfWeb.DAL\bin\Debug\BookShelfWeb.ConverterManager.dll
+C:\Users\Baran.Topal\Documents\C#Projects\Other\Other\BookShelfWebApplication\BookShelfWeb.DAL\bin\Debug\BookShelfWeb.Definitions.pdb
+C:\Users\Baran.Topal\Documents\C#Projects\Other\Other\BookShelfWebApplication\BookShelfWeb.DAL\bin\Debug\BookShelfWebBookShelfModel.pdb
+C:\Users\Baran.Topal\Documents\C#Projects\Other\Other\BookShelfWebApplication\BookShelfWeb.DAL\bin\Debug\BookShelfWeb.DataAccessHelper.pdb
+C:\Users\Baran.Topal\Documents\C#Projects\Other\Other\BookShelfWebApplication\BookShelfWeb.DAL\bin\Debug\BookShelfWeb.IDAL.pdb
+C:\Users\Baran.Topal\Documents\C#Projects\Other\Other\BookShelfWebApplication\BookShelfWeb.DAL\bin\Debug\BookShelfWeb.ConverterManager.pdb
+C:\Users\Baran.Topal\Documents\C#Projects\Other\Other\BookShelfWebApplication\BookShelfWeb.DAL\obj\Debug\BookShelfWeb.DAL.csprojResolveAssemblyReference.cache
+C:\Users\Baran.Topal\Documents\C#Projects\Other\Other\BookShelfWebApplication\BookShelfWeb.DAL\obj\Debug\BookShelfWeb.DAL.dll
+C:\Users\Baran.Topal\Documents\C#Projects\Other\Other\BookShelfWebApplication\BookShelfWeb.DAL\obj\Debug\BookShelfWeb.DAL.pdb

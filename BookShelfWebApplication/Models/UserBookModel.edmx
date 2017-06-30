@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="BookShelfWebModel1.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2005" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="BookShelfWebModel1StoreContainer">
+          <EntitySet Name="Book" EntityType="BookShelfWebModel1.Store.Book" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="User" EntityType="BookShelfWebModel1.Store.User" store:Type="Tables" Schema="dbo" />
+          <AssociationSet Name="FK_Book_User" Association="BookShelfWebModel1.Store.FK_Book_User">
+            <End Role="User" EntitySet="User" />
+            <End Role="Book" EntitySet="Book" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Book">
+          <Key>
+            <PropertyRef Name="bookID" />
+          </Key>
+          <Property Name="bookID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="isbn" Type="nchar" MaxLength="10" />
+          <Property Name="bookName" Type="nchar" MaxLength="10" />
+          <Property Name="authorName" Type="nchar" MaxLength="10" />
+          <Property Name="userID" Type="int" />
+          <Property Name="bookStatus" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="User">
+          <Key>
+            <PropertyRef Name="userID" />
+          </Key>
+          <Property Name="userID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="fullName" Type="nchar" MaxLength="10" />
+          <Property Name="password" Type="nchar" MaxLength="10" />
+          <Property Name="email" Type="nvarchar" MaxLength="50" />
+          <Property Name="address" Type="nvarchar" MaxLength="50" />
+          <Property Name="city" Type="nchar" MaxLength="10" />
+        </EntityType>
+        <Association Name="FK_Book_User">
+          <End Role="User" Type="BookShelfWebModel1.Store.User" Multiplicity="0..1" />
+          <End Role="Book" Type="BookShelfWebModel1.Store.Book" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="User">
+              <PropertyRef Name="userID" />
+            </Principal>
+            <Dependent Role="Book">
+              <PropertyRef Name="userID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="BookShelfWebModel1" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="BookShelfWebEntities1" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Books" EntityType="BookShelfWebModel1.Book" />
+          <EntitySet Name="Users" EntityType="BookShelfWebModel1.User" />
+          <AssociationSet Name="FK_Book_User" Association="BookShelfWebModel1.FK_Book_User">
+            <End Role="User" EntitySet="Users" />
+            <End Role="Book" EntitySet="Books" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Book">
+          <Key>
+            <PropertyRef Name="bookID" />
+          </Key>
+          <Property Name="bookID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="isbn" Type="String" MaxLength="10" Unicode="true" FixedLength="true" />
+          <Property Name="bookName" Type="String" MaxLength="10" Unicode="true" FixedLength="true" />
+          <Property Name="authorName" Type="String" MaxLength="10" Unicode="true" FixedLength="true" />
+          <Property Name="userID" Type="Int32" />
+          <Property Name="bookStatus" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="User" Relationship="BookShelfWebModel1.FK_Book_User" FromRole="Book" ToRole="User" />
+        </EntityType>
+        <EntityType Name="User">
+          <Key>
+            <PropertyRef Name="userID" />
+          </Key>
+          <Property Name="userID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="fullName" Type="String" MaxLength="10" Unicode="true" FixedLength="true" />
+          <Property Name="password" Type="String" MaxLength="10" Unicode="true" FixedLength="true" />
+          <Property Name="email" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="address" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="city" Type="String" MaxLength="10" Unicode="true" FixedLength="true" />
+          <NavigationProperty Name="Books" Relationship="BookShelfWebModel1.FK_Book_User" FromRole="User" ToRole="Book" />
+        </EntityType>
+        <Association Name="FK_Book_User">
+          <End Role="User" Type="BookShelfWebModel1.User" Multiplicity="0..1" />
+          <End Role="Book" Type="BookShelfWebModel1.Book" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="User">
+              <PropertyRef Name="userID" />
+            </Principal>
+            <Dependent Role="Book">
+              <PropertyRef Name="userID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="BookShelfWebModel1StoreContainer" CdmEntityContainer="BookShelfWebEntities1">
+          <EntitySetMapping Name="Books"><EntityTypeMapping TypeName="BookShelfWebModel1.Book"><MappingFragment StoreEntitySet="Book">
+            <ScalarProperty Name="bookID" ColumnName="bookID" />
+            <ScalarProperty Name="isbn" ColumnName="isbn" />
+            <ScalarProperty Name="bookName" ColumnName="bookName" />
+            <ScalarProperty Name="authorName" ColumnName="authorName" />
+            <ScalarProperty Name="userID" ColumnName="userID" />
+            <ScalarProperty Name="bookStatus" ColumnName="bookStatus" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="Users"><EntityTypeMapping TypeName="BookShelfWebModel1.User"><MappingFragment StoreEntitySet="User">
+            <ScalarProperty Name="userID" ColumnName="userID" />
+            <ScalarProperty Name="fullName" ColumnName="fullName" />
+            <ScalarProperty Name="password" ColumnName="password" />
+            <ScalarProperty Name="email" ColumnName="email" />
+            <ScalarProperty Name="address" ColumnName="address" />
+            <ScalarProperty Name="city" ColumnName="city" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="UserBookModel">
+        <EntityTypeShape EntityType="BookShelfWebModel1.Book" Width="1.5" PointX="3" PointY="1" Height="2.3648893229166665" IsExpanded="true" />
+        <EntityTypeShape EntityType="BookShelfWebModel1.User" Width="1.5" PointX="0.75" PointY="1" Height="2.3648893229166674" IsExpanded="true" />
+        <AssociationConnector Association="BookShelfWebModel1.FK_Book_User" ManuallyRouted="false">
+          <ConnectorPoint PointX="2.25" PointY="2.1824446614583333" />
+          <ConnectorPoint PointX="3" PointY="2.1824446614583333" />
+        </AssociationConnector>
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>

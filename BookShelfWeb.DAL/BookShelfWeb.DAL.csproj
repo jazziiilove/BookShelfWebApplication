@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{06DF8EA0-F578-44A6-9BC6-B11AB685B47E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BookShelfWeb.DAL</RootNamespace>
+    <AssemblyName>BookShelfWeb.DAL</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BookShelfAppSettingsDAL.cs" />
+    <Compile Include="BookShelfBookDAL.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="BookShelfUserDAL.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BookShelf.Definitions\BookShelfWeb.Definitions.csproj">
+      <Project>{453A0F57-2F14-4AFB-B84E-81439C3DF6D9}</Project>
+      <Name>BookShelfWeb.Definitions</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BookShelfWeb.BookShelfModel\BookShelfWeb.BookShelfModel.csproj">
+      <Project>{FD863722-30C4-433D-B733-4931626B927F}</Project>
+      <Name>BookShelfWeb.BookShelfModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BookShelfWeb.DataAccessHelper\BookShelfWeb.DataAccessHelper.csproj">
+      <Project>{F7E59AA8-6ACF-4CF4-962E-DBEEBD3AC5A3}</Project>
+      <Name>BookShelfWeb.DataAccessHelper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BookShelfWeb.IDAL\BookShelfWeb.IDAL.csproj">
+      <Project>{EF9644E6-D5A0-4D37-8FE5-2466D8D01545}</Project>
+      <Name>BookShelfWeb.IDAL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

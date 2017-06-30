@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BookShelfWebModel1.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2005" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="BookShelfWebModel1StoreContainer">
+    <EntitySet Name="Book" EntityType="BookShelfWebModel1.Store.Book" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="User" EntityType="BookShelfWebModel1.Store.User" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_Book_User" Association="BookShelfWebModel1.Store.FK_Book_User">
+      <End Role="User" EntitySet="User" />
+      <End Role="Book" EntitySet="Book" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Book">
+    <Key>
+      <PropertyRef Name="bookID" />
+    </Key>
+    <Property Name="bookID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="isbn" Type="nchar" MaxLength="10" />
+    <Property Name="bookName" Type="nchar" MaxLength="10" />
+    <Property Name="authorName" Type="nchar" MaxLength="10" />
+    <Property Name="userID" Type="int" />
+    <Property Name="bookStatus" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="userID" />
+    </Key>
+    <Property Name="userID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="fullName" Type="nchar" MaxLength="10" />
+    <Property Name="password" Type="nchar" MaxLength="10" />
+    <Property Name="email" Type="nvarchar" MaxLength="50" />
+    <Property Name="address" Type="nvarchar" MaxLength="50" />
+    <Property Name="city" Type="nchar" MaxLength="10" />
+  </EntityType>
+  <Association Name="FK_Book_User">
+    <End Role="User" Type="BookShelfWebModel1.Store.User" Multiplicity="0..1" />
+    <End Role="Book" Type="BookShelfWebModel1.Store.Book" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="userID" />
+      </Principal>
+      <Dependent Role="Book">
+        <PropertyRef Name="userID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>
